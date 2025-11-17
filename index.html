@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>jeevaVerse</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>JeevaVerse — The Premium AI Experience</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="historyPanel" class="history-panel">
+        <div class="history-header">
+            <h2>Chat History</h2>
+            <button id="closeHistoryBtn" class="close-btn">&times;</button>
+        </div>
+        <div id="historyContent"></div>
+        <button id="clearHistoryBtn" class="btn clear-btn">Clear Chat</button>
+    </div>
+    <div id="mainContent">
+        <div class="background-animation"></div>
+        <header class="header">
+            <nav class="nav">
+                <div class="logo">JeevaVerse</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="historyBtn" class="nav-btn">History</button></li>
+                    <li class="toggle-group">
+                        <span class="toggle-label">Speech</span>
+                        <label class="switch">
+                            <input type="checkbox" id="speechToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                    <li class="toggle-group">
+                        <span class="toggle-label">Dark Mode</span>
+                        <label class="switch">
+                            <input type="checkbox" id="darkModeToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="app" class="container">
+            <div class="chat-container">
+                <div id="output" class="output-area">
+                    <!-- Chat messages will be dynamically inserted here -->
+                </div>
+                <div class="controls-wrapper">
+                     <div id="speechControls" class="speech-controls">
+                        <button id="pauseSpeechBtn" class="speech-btn">Pause</button>
+                        <button id="resumeSpeechBtn" class="speech-btn">Resume</button>
+                    </div>
+                    <div id="imagePreviewContainer" class="image-preview-container"></div>
+                    <div class="input-area">
+                        <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                        <button id="attachImageBtn" class="attach-btn" aria-label="Attach Image"></button>
+                        <textarea id="userInput" placeholder="Ask a question, attach an image, or use the mic..."></textarea>
+                        <button id="sendButton" class="send-btn" aria-label="Send Message"></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section id="about" class="content-section">
+            <h2>About JeevaVerse</h2>
+            <p>
+                Created by <strong>Jeeva Antony A (CSE A)</strong> at the Nehru Institute of Technology, JeevaVerse is a streamlined AI playground. Powered by Google's Gemini, it combines multiple AI tools into one intelligent conversationalist, designed for simplicity and power.
+            </p>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Get in Touch</h2>
+            <form id="contactForm" action="https://formspree.io/f/xqagpnjw" method="POST">
+                <input name="email" type="email" placeholder="Your Email" required />
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <p>© JeevaVerse — The All-in-One AI by Jeeva Antony A</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
